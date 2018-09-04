@@ -2,6 +2,7 @@ import os
 import json
 import sys
 
+# 140海星
 for i in range(140):
 	config_name = 'config' + str(i) + '.json'
 	print('peer',i)
