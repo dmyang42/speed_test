@@ -1,4 +1,7 @@
 #!/bin/zsh
+# Program:
+# do the connecting work and test work
+# after testing, kill the process
 
 sslocal -c ${1} &
 export ALL_PROXY=socks5://127.0.0.1:1080
