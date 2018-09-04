@@ -1,4 +1,5 @@
 #!/bin/zsh
+# Program: 
 cd all_config
 python data_operation.py
 
