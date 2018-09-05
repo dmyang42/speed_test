@@ -18,3 +18,8 @@ Shell script to test a batch of monocloud / cordcloud nodes' speed
 
   1. move export.json into /all_config
   2. sh main.sh
+
+# v0.3
+
+  1. 调整了文件组织结构
+  2. 节点列表长度(.sh和.py之前传数据)
