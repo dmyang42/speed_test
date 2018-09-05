@@ -1,0 +1,11 @@
+{
+		"server": "***.***.***",
+		"local_address": "127.0.0.1",
+		"local_port": 1080,
+		"timeout": 600,
+		"workers": 1,
+		"server_port": 34330,
+		"password": "*********",
+		"method": "chacha20-ietf",
+		"plugin": ""
+}
