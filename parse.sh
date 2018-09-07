@@ -7,7 +7,15 @@ nodes=$(cat ${export_path} | jq ".configs")
 length=$(cat ${export_path} | jq ".configs | length")
 typeset -i length
 
+out='out.txt'
+if [ ! -n $out ]; then
+    touch $out
+else
+    rm $out
+    touch $out
+fi
 export ALL_PROXY=socks5://127.0.0.1:1080
+
 for (( i=0; i<$length; i=i+1 ))
 do
     server=$(echo $nodes | jq ".[$i].server");\
@@ -52,7 +60,9 @@ do
     echo "Connected no.${i}"
 
     # test proxy speed
-    speedtest --simple > "./out${i}.txt"
+    echo $server >> $out
+    speedtest --simple >> $out
+    echo >> './out.txt'
 
     # kill sslocal process
     lsof -i:1080 | grep 'sslocal' | cut -d ' ' -f2 | xargs kill
