@@ -23,3 +23,5 @@ Shell script to test a batch of monocloud / cordcloud nodes' speed
 
   1. 调整了文件组织结构
   2. 节点列表长度(.sh和.py之前传数据)
+
+LICENSE：Code is released under WTFPL.
