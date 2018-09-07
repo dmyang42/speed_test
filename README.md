@@ -23,3 +23,7 @@ Shell script to test a batch of monocloud / cordcloud nodes' speed
 
   1. 调整了文件组织结构
   2. 节点列表长度(.sh和.py之前传数据)
+  
+# v0.4
+
+  1. ./parse.sh运行，生成三个out文件（即v0.3功能，但全部在shell script中实现，方便日后rewrite)
