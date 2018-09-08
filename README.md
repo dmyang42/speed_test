@@ -27,3 +27,7 @@ Shell script to test a batch of monocloud / cordcloud nodes' speed
 # v0.4
 
   1. ./parse.sh运行，生成out文件，包含所以节点address和测速结果
+
+# v0.5
+
+  1. 可以应对错误节点(包括信息错误和连不上)
