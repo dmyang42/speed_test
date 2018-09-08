@@ -1,0 +1,19 @@
+cn2.***.info
+Ping: 45.777 ms
+Download: 29.38 Mbit/s
+Upload: 17.81 Mbit/s
+
+cn4.***.info
+Ping: 43.043 ms
+Download: 10.53 Mbit/s
+Upload: 18.01 Mbit/s
+
+cchkt2.***.online
+Failed
+
+cn4.***.inf
+Failed
+
+cchkt4.***.online
+Failed
+
