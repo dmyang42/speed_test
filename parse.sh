@@ -58,16 +58,16 @@ do
     # connect to VPS
     sslocal -s $server -p $server_port -l $local_port -k\
         $password -m $method -q &
-    export ALL_PROXY=socks5://127.0.0.1:1080
+    # export ALL_PROXY=socks5://127.0.0.1:1080
     sleep 0.5
 
     if_connect="fail"
-    curl --connect-timeout 6 -m 8 -i $curl_web > /dev/null && if_connect="success"
+    proxychains curl --connect-timeout 10 -m 10 -i $curl_web > /dev/null && if_connect="success"
 
     if [ "$if_connect" = "success" ]; then
         echo "Connected no.${i}"
         echo $server >> $out
-        speedtest --simple >> $out
+        proxychains speedtest --simple >> $out
         echo >> './out.txt'
 #        lsof -i:1080 | grep 'sslocal' | cut -d ' ' -f2 | xargs kill
         pkill sslocal

@@ -9,7 +9,7 @@ server_list = [] #save servers' data
 #data operation
 while True:
 	line = f.readline()
-	if not line: 
+	if not line:
 		server_list.append(tmp_server.copy())
 		break
 	if line[0] == '\n':
@@ -27,7 +27,7 @@ list_length = len(server_list)
 #by download speed
 sorted_by_Download = sorted( server_list, key=lambda server : float(server['Download'].split(' ', 1)[0]), reverse=True )
 #by upload speed
-sorted_by_Upload = sorted( server_list, key=lambda server : float(server['Upload'].split(' ', 1)[0]), reverse=True ) 
+sorted_by_Upload = sorted( server_list, key=lambda server : float(server['Upload'].split(' ', 1)[0]), reverse=True )
 #by Ping
 sorted_by_Ping = sorted( server_list, key=lambda server : float(server['Ping'].split(' ', 1)[0]), reverse=True )
 
@@ -38,7 +38,7 @@ sorted_by_Ping = sorted( server_list, key=lambda server : float(server['Ping'].s
 def get_score(self, score_method):
 	score = {}
 	for server in sorted_by_Ping:
-		score[server['Server']] = 
+		score[server['Server']] =
 '''
 score_method = [0.2, 0.8]
 score = {}

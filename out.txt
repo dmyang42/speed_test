@@ -1,19 +1,27 @@
 cn2.***.info
-Ping: 45.777 ms
-Download: 29.38 Mbit/s
-Upload: 17.81 Mbit/s
+ProxyChains-3.1 (http://proxychains.sf.net)
+Ping: 250.67 ms
+Download: 11.79 Mbit/s
+Upload: 7.26 Mbit/s
 
 cn4.***.info
-Ping: 43.043 ms
-Download: 10.53 Mbit/s
-Upload: 18.01 Mbit/s
+ProxyChains-3.1 (http://proxychains.sf.net)
+Ping: 227.572 ms
+Download: 12.51 Mbit/s
+Upload: 8.65 Mbit/s
 
 cchkt2.***.online
+ProxyChains-3.1 (http://proxychains.sf.net)
+Ping: 602520.818 ms
+Download: 0.00 Mbit/s
+Upload: 0.00 Mbit/s
+
+cn4.mydarkcloud.inf
 Failed
 
-cn4.***.inf
+cchkt4.ccddns.online
 Failed
 
-cchkt4.***.online
+cchkt2.ccddns.online
 Failed
 
